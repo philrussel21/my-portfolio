@@ -32,3 +32,11 @@ button {
     cursor: pointer;
     background-color: $content-colour;
 }
+
+header {
+    @include header-navs;
+}
+main {
+    @include base-margin;
+    text-align: center;
+}

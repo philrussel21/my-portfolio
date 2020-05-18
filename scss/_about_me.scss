@@ -1,11 +1,3 @@
-header {
-    @include header-navs;
-}
-main {
-    @include base-margin;
-    text-align: center;
-}
-
 .journey {
     &-container {
         display: flex;
