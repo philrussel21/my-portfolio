@@ -1,24 +1,4 @@
 @import "variables";
+@import "global";
 @import "home";
 @import "about_me";
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-}
-
-li {
-    list-style-type: none;
-}
-
-button {
-    cursor: pointer;
-    background-color: #fff;
-}
