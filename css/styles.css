@@ -364,6 +364,19 @@ h2 {
   width: 100%;
   background-color: rgba(179, 179, 179, 0.3);
   margin: 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .tech-stack .techs a {
@@ -387,6 +400,93 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.tech-stack .techs:first-of-type {
+  background-image: url("../assets/ruby.png");
+  background-size: cover;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tech-stack .techs:first-of-type::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.tech-stack .techs:nth-of-type(2) {
+  background-image: url("../assets/HTML5_Logo_512.png");
+  background-size: cover;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tech-stack .techs:nth-of-type(2)::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.tech-stack .techs:nth-of-type(3) {
+  background-image: url("../assets/CSS.3.svg");
+  background-size: cover;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tech-stack .techs:nth-of-type(3)::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.tech-stack .techs:last-of-type {
+  background-image: url("../assets/sass-1.svg");
+  background-size: cover;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tech-stack .techs:last-of-type::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.tech-stack .techs h3,
+.tech-stack .techs p {
+  z-index: 5;
+  padding: 1% 0;
+}
+
+.tech-stack .techs .fa-star,
+.tech-stack .techs .fa-star-half-alt {
+  color: gold;
 }
 
 .terminal-proj .vid-container {

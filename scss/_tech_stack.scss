@@ -2,5 +2,52 @@
     .techs {
         // anchor whole card
         @include mobile-cards;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &:first-of-type {
+            background-image: url("../assets/ruby.png");
+            @include bg-image;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &:nth-of-type(2) {
+            background-image: url("../assets/HTML5_Logo_512.png");
+            @include bg-image;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &:nth-of-type(3) {
+            background-image: url("../assets/CSS.3.svg");
+            @include bg-image;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &:last-of-type {
+            background-image: url("../assets/sass-1.svg");
+            @include bg-image;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        h3,
+        p {
+            z-index: 5;
+            padding: 1% 0;
+        }
+
+        .fa-star,
+        .fa-star-half-alt {
+            color: gold;
+        }
     }
 }
