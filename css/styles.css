@@ -12,7 +12,7 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#434343), to(#000000));
   background: linear-gradient(to right, #434343, #000000);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #fff;
+  color: rgba(255, 255, 250, 0.9);
 }
 
 a {
@@ -25,14 +25,17 @@ li {
   list-style-type: none;
 }
 
-button {
+.btn {
   cursor: pointer;
-  background-color: #fff;
+  background-color: rgba(255, 255, 250, 0.9);
 }
 
 header {
   height: 10%;
   width: 100%;
+  background-color: rgba(179, 179, 179, 0.3);
+  position: fixed;
+  z-index: 10;
 }
 
 header nav {
@@ -62,7 +65,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  color: #fff;
+  color: rgba(255, 255, 250, 0.9);
 }
 
 .showcase .video-cont {
@@ -190,7 +193,7 @@ main {
   min-height: 150px;
   max-height: 30%;
   width: 100%;
-  background-color: #645b5b;
+  background-color: rgba(179, 179, 179, 0.3);
   margin: 5% 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,7 +214,7 @@ main {
   min-height: 150px;
   max-height: 30%;
   width: 100%;
-  background-color: #645b5b;
+  background-color: rgba(179, 179, 179, 0.3);
   margin: 5% 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,7 +261,7 @@ main {
   min-height: 150px;
   max-height: 30%;
   width: 100%;
-  background-color: #645b5b;
+  background-color: rgba(179, 179, 179, 0.3);
   margin: 5% 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,5 +278,52 @@ main {
           align-items: center;
   min-height: 300px;
   max-width: 70%;
+}
+
+.contact {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contact .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contact form {
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(179, 179, 179, 0.3);
+}
+
+.contact form label,
+.contact form input,
+.contact form textarea {
+  display: block;
 }
 /*# sourceMappingURL=styles.css.map */

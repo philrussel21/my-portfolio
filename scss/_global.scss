@@ -16,7 +16,7 @@ body {
         #434343,
         #000000
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #fff;
+    color: $content-colour;
 }
 a {
     text-decoration: none;
@@ -28,13 +28,16 @@ li {
     list-style-type: none;
 }
 
-button {
+.btn {
     cursor: pointer;
     background-color: $content-colour;
 }
 
 header {
     @include header-navs;
+    background-color: $placeholder-colour;
+    position: fixed;
+    z-index: 10;
 }
 main {
     @include base-margin;
