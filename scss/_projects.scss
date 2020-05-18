@@ -17,6 +17,7 @@
     align-items: center;
 
     .projects {
+        // anchor whole card
         @include mobile-cards;
         min-height: 300px;
         max-width: 70%;

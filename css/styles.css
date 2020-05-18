@@ -127,6 +127,15 @@ main {
   text-align: center;
 }
 
+h1 {
+  padding: 5% 0;
+}
+
+h2 {
+  padding: 5% 0;
+  letter-spacing: 0.5rem;
+}
+
 .showcase {
   height: 100vh;
   display: -webkit-box;
@@ -264,11 +273,22 @@ main {
 }
 
 .blogs-content {
+  position: relative;
   min-height: 150px;
   max-height: 30%;
   width: 100%;
   background-color: rgba(179, 179, 179, 0.3);
   margin: 5% 0;
+}
+
+.blogs-content a {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,12 +304,76 @@ main {
           align-items: center;
 }
 
+.blogs-content:first-of-type {
+  background-image: url("../assets/blog1 jordan-whitfield-sm3Ub_IJKQg-unsplash.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.blogs-content:first-of-type::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.blogs-content:nth-of-type(2) {
+  background-image: url("../assets/blog2 martin-shreder-5Xwaj9gaR0g-unsplash.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.blogs-content:nth-of-type(2)::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.blogs-content:last-of-type {
+  background-image: url("../assets/blog3 amanda-jones-w5zpEiVtNIk-unsplash.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.blogs-content:last-of-type::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.blogs-content h3,
+.blogs-content p {
+  z-index: 2;
+}
+
 .tech-stack .techs {
+  position: relative;
   min-height: 150px;
   max-height: 30%;
   width: 100%;
   background-color: rgba(179, 179, 179, 0.3);
   margin: 5% 0;
+}
+
+.tech-stack .techs a {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,11 +416,24 @@ main {
 }
 
 .other-projs .projects {
+  position: relative;
   min-height: 150px;
   max-height: 30%;
   width: 100%;
   background-color: rgba(179, 179, 179, 0.3);
   margin: 5% 0;
+  min-height: 300px;
+  max-width: 70%;
+}
+
+.other-projs .projects a {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,8 +447,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 300px;
-  max-width: 70%;
 }
 
 .contact {

@@ -6,13 +6,39 @@ $placeholder-colour: hsla(0, 0%, 70%, 0.3);
 
 //Mixins
 @mixin mobile-cards {
+    position: relative;
     min-height: 150px;
     max-height: 30%;
     width: 100%;
     background-color: $placeholder-colour;
     margin: 5% 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+    a {
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@mixin bg-image {
+    background-size: cover;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: $overlay-colour;
+    }
 }

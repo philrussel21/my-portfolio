@@ -50,5 +50,25 @@
 
     &-content {
         @include mobile-cards;
+
+        &:first-of-type {
+            background-image: url("../assets/blog1\ jordan-whitfield-sm3Ub_IJKQg-unsplash.jpg");
+            @include bg-image;
+        }
+
+        &:nth-of-type(2) {
+            background-image: url("../assets/blog2\ martin-shreder-5Xwaj9gaR0g-unsplash.jpg");
+            @include bg-image;
+        }
+
+        &:last-of-type {
+            background-image: url("../assets/blog3\ amanda-jones-w5zpEiVtNIk-unsplash.jpg");
+            @include bg-image;
+        }
+
+        h3,
+        p {
+            z-index: 2;
+        }
     }
 }
