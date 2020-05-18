@@ -1,4 +1,32 @@
 $heading-colour: #fff;
-$overlay-colour: rgba(0, 0, 0, 0.6);
+$overlay-colour: rgba(0, 0, 0, 0.7);
 $content-colour: #fff;
 $placeholder-colour: #645b5b;
+
+//Mixins
+@mixin base-margin {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+@mixin header-navs {
+    height: 10%;
+    width: 100%;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@mixin mobile-cards {
+    min-height: 150px;
+    max-height: 30%;
+    width: 100%;
+    background-color: $placeholder-colour;
+    margin: 5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
