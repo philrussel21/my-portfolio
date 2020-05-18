@@ -55,7 +55,7 @@ header {
 
         #links {
             // display: none;
-            background-color: black;
+            background-color: $nav-bg-colour;
             width: 50%;
             height: 100vh;
             z-index: 100;
@@ -70,6 +70,9 @@ header {
 
                     li {
                         flex: 1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
                 }
             }

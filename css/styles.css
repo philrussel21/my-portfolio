@@ -65,7 +65,7 @@ header nav .nav-cont {
 }
 
 header nav #links {
-  background-color: black;
+  background-color: #000;
   width: 50%;
   height: 100vh;
   z-index: 100;
@@ -90,6 +90,15 @@ header nav #links .nav ul li {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header nav #links .socials {
