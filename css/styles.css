@@ -61,7 +61,7 @@ button {
   top: 0px;
   left: 0px;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .showcase video {
@@ -163,7 +163,7 @@ main {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .journey-container .journey-content {
@@ -187,6 +187,27 @@ main {
 }
 
 .blogs-content {
+  min-height: 150px;
+  max-height: 30%;
+  width: 100%;
+  background-color: #645b5b;
+  margin: 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tech-stack .techs {
   min-height: 150px;
   max-height: 30%;
   width: 100%;
