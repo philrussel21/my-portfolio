@@ -13,14 +13,46 @@
     <body>
         <header>
             <nav>
+                <div class="nav-cont">
                 <p>Phil Antiporda</p>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about_me.html">About Me</a></li>
-                    <li><a href="tech_stack.html">Tech Stack</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+                <a href="#" onclick="myFunction()"
+                    ><i class="fas fa-bars"></i
+                ></a>
+                </div>
+                <div id="links">
+                    <div class="nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about_me.html">About Me</a></li>
+                            <li><a href="tech_stack.html">Tech Stack</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="socials">
+                        <a
+                            href="https://github.com/philrussel21"
+                            target="_blank"
+                            ><i class="fab fa-github fa-3x"></i
+                        ></a>
+
+                        <a
+                            href="https://www.linkedin.com/in/phil-antiporda-15469316a/"
+                            target="_blank"
+                            ><i class="fab fa-linkedin fa-3x"></i
+                        ></a>
+
+                        <a
+                            href="https://codepen.io/philrussel21"
+                            target="_blank"
+                            ><i class="fab fa-codepen fa-3x"></i
+                        ></a>
+
+                        <a href="https://twitter.com/PeelRasel" target="_blank"
+                            ><i class="fab fa-twitter fa-3x"></i
+                        ></a>
+                    </div>
+                </div>
             </nav>
         </header>
 
@@ -56,25 +88,18 @@
 
         <footer>
             <p>© Phil Antiporda, 2020</p>
-            <div class="socials">
-                <a href="https://github.com/philrussel21" target="_blank"
-                    ><i class="fab fa-github fa-3x"></i
-                ></a>
-
-                <a
-                    href="https://www.linkedin.com/in/phil-antiporda-15469316a/"
-                    target="_blank"
-                    ><i class="fab fa-linkedin fa-3x"></i
-                ></a>
-
-                <a href="https://codepen.io/philrussel21" target="_blank"
-                    ><i class="fab fa-codepen fa-3x"></i
-                ></a>
-
-                <a href="https://twitter.com/PeelRasel" target="_blank"
-                    ><i class="fab fa-twitter fa-3x"></i
-                ></a>
+            
             </div>
         </footer>
     </body>
+    <script>
+        function myFunction() {
+            let x = document.getElementById("links");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </html>

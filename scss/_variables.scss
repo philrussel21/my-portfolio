@@ -4,21 +4,6 @@ $content-colour: hsla(60, 100%, 99%, 0.9);
 $placeholder-colour: hsla(0, 0%, 70%, 0.3);
 
 //Mixins
-@mixin base-margin {
-    max-width: 95%;
-    margin: 0 auto;
-}
-
-@mixin header-navs {
-    height: 10%;
-    width: 100%;
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
 @mixin mobile-cards {
     min-height: 150px;
     max-height: 30%;
