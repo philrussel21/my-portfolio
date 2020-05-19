@@ -19,7 +19,7 @@
                     ><i class="fas fa-bars"></i
                 ></a>
                 </div>
-                <div id="links" >
+                <div id="links" class="hidden">
                     <div class="nav">
                         <ul>
                             <li><a href="index.html">Home</a></li>
@@ -127,11 +127,7 @@
     <script>
         function myFunction() {
             let x = document.getElementById("links");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
+            x.classList.toggle("hidden");
         }
     </script>
 </html>
