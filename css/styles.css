@@ -121,10 +121,11 @@ header nav #links .socials a {
 }
 
 main {
-  max-width: 95%;
+  max-width: 1000px;
+  width: 95%;
   margin: 0 auto;
   margin-bottom: 5%;
-  padding-top: 10%;
+  padding-top: 5%;
   text-align: center;
 }
 
@@ -372,6 +373,10 @@ footer {
   letter-spacing: 0.5rem;
 }
 
+.intro {
+  padding: 2% 0;
+}
+
 .tech-stack .techs {
   position: relative;
   min-height: 150px;
@@ -493,9 +498,13 @@ footer {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.tech-stack .techs h3,
-.tech-stack .techs p {
+.tech-stack .techs .tech-cont {
   z-index: 5;
+  width: 100%;
+}
+
+.tech-stack .techs .tech-cont h3,
+.tech-stack .techs .tech-cont p {
   padding: 1% 0;
 }
 
@@ -725,6 +734,58 @@ footer {
     -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
     background-size: contain;
+  }
+  .tech-stack {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[7];
+        grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+    row-gap: 10%;
+  }
+  .tech-stack .techs {
+    max-height: 100%;
+  }
+  .tech-stack .techs:first-of-type {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / span 2;
+  }
+  .tech-stack .techs:first-of-type:after {
+    content: none;
+  }
+  .tech-stack .techs:nth-of-type(2) {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-column: 5 / span 2;
+  }
+  .tech-stack .techs:nth-of-type(2):after {
+    content: none;
+  }
+  .tech-stack .techs:nth-of-type(3) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / span 2;
+  }
+  .tech-stack .techs:nth-of-type(3):after {
+    content: none;
+  }
+  .tech-stack .techs:last-of-type {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-column: 5 / span 2;
+  }
+  .tech-stack .techs:last-of-type:after {
+    content: none;
+  }
+  .tech-stack .techs .tech-cont {
+    background-color: rgba(0, 0, 0, 0.7);
   }
 }
 

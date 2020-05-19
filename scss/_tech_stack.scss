@@ -1,3 +1,7 @@
+.intro {
+    padding: $padding-s;
+}
+
 .tech-stack {
     .techs {
         // anchor whole card
@@ -31,10 +35,14 @@
             @include tech-bg;
         }
 
-        h3,
-        p {
+        .tech-cont {
             z-index: 5;
-            padding: 1% 0;
+            width: 100%;
+
+            h3,
+            p {
+                padding: $padding-xs;
+            }
         }
 
         .fa-star,
