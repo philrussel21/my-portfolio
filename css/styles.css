@@ -123,6 +123,7 @@ header nav #links .socials a {
 main {
   max-width: 95%;
   margin: 0 auto;
+  margin-bottom: 5%;
   padding-top: 10%;
   text-align: center;
 }
@@ -133,6 +134,16 @@ h1 {
 
 h2 {
   padding: 5% 0;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  right: 2%;
 }
 
 .showcase {
@@ -166,7 +177,7 @@ h2 {
   top: 0px;
   left: 0px;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .showcase video {
@@ -248,7 +259,7 @@ h2 {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .journey-container .journey-content {
@@ -269,6 +280,54 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.blogs-container .blog1 {
+  background-image: url("../assets/blog1 jordan-whitfield-sm3Ub_IJKQg-unsplash.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.blogs-container .blog1::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.blogs-container .blog2 {
+  background-image: url("../assets/blog2 martin-shreder-5Xwaj9gaR0g-unsplash.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.blogs-container .blog2::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.blogs-container .blog3 {
+  background-image: url("../assets/blog3 amanda-jones-w5zpEiVtNIk-unsplash.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.blogs-container .blog3::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .blogs-content {
@@ -301,54 +360,6 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.blogs-content:first-of-type {
-  background-image: url("../assets/blog1 jordan-whitfield-sm3Ub_IJKQg-unsplash.jpg");
-  background-size: cover;
-  position: relative;
-}
-
-.blogs-content:first-of-type::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.blogs-content:nth-of-type(2) {
-  background-image: url("../assets/blog2 martin-shreder-5Xwaj9gaR0g-unsplash.jpg");
-  background-size: cover;
-  position: relative;
-}
-
-.blogs-content:nth-of-type(2)::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.blogs-content:last-of-type {
-  background-image: url("../assets/blog3 amanda-jones-w5zpEiVtNIk-unsplash.jpg");
-  background-size: cover;
-  position: relative;
-}
-
-.blogs-content:last-of-type::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .blogs-content h3,
@@ -422,7 +433,7 @@ h2 {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .tech-stack .techs:nth-of-type(2) {
@@ -441,7 +452,7 @@ h2 {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .tech-stack .techs:nth-of-type(3) {
@@ -460,7 +471,7 @@ h2 {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .tech-stack .techs:last-of-type {
@@ -479,7 +490,7 @@ h2 {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .tech-stack .techs h3,
@@ -627,5 +638,116 @@ h2 {
 
 .contact form textarea {
   width: 80%;
+}
+
+@media screen and (min-width: 600px) {
+  .mobile-hidden {
+    display: block;
+  }
+  .mobile-only {
+    display: none;
+  }
+  .journey-content {
+    max-width: 50%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .blogs {
+    padding-bottom: 8%;
+  }
+  .blogs-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+    gap: 3% 0;
+    max-height: 100%;
+  }
+  .blogs-container div {
+    max-height: 100%;
+    height: 100%;
+  }
+  .blogs-container .mobile-hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogs-container .mobile-hidden p {
+    width: 90%;
+  }
+  .blogs-container .blog1::after,
+  .blogs-container .blog2::after,
+  .blogs-container .blog3::after {
+    content: none;
+  }
+  .blogs-container .blog1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+  .blogs-container .cont1,
+  .blogs-container .cont3 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3 / span 2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .blogs-container .blog2 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3 / span 2;
+  }
+  .blogs-container .cont2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .blogs-container .blog3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .journey-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .journey-container .img-container:after {
+    content: none;
+  }
+  .journey-container .journey-content {
+    max-width: 100%;
+    padding: 2% 0;
+    padding-top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .journey-container .journey-content h2 {
+    padding: 2% 0;
+  }
+  .journey-container .journey-content p {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

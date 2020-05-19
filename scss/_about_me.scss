@@ -46,25 +46,25 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-    }
 
-    &-content {
-        @include mobile-cards;
-
-        &:first-of-type {
+        .blog1 {
             background-image: url("../assets/blog1\ jordan-whitfield-sm3Ub_IJKQg-unsplash.jpg");
             @include bg-image;
         }
 
-        &:nth-of-type(2) {
+        .blog2 {
             background-image: url("../assets/blog2\ martin-shreder-5Xwaj9gaR0g-unsplash.jpg");
             @include bg-image;
         }
 
-        &:last-of-type {
+        .blog3 {
             background-image: url("../assets/blog3\ amanda-jones-w5zpEiVtNIk-unsplash.jpg");
             @include bg-image;
         }
+    }
+
+    &-content {
+        @include mobile-cards;
 
         h3,
         p {

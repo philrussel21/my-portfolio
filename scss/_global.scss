@@ -103,14 +103,25 @@ header {
 main {
     max-width: 95%;
     margin: 0 auto;
+    margin-bottom: 5%;
     padding-top: 10%;
     text-align: center;
 }
 
 h1 {
-    padding: 5% 0;
+    padding: $padding-m;
 }
 
 h2 {
-    padding: 5% 0;
+    padding: $padding-m;
+}
+
+.mobile-hidden {
+    display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    right: 2%;
 }

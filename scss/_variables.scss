@@ -1,8 +1,11 @@
 $heading-colour: #fff;
-$overlay-colour: rgba(0, 0, 0, 0.5);
+$overlay-colour: rgba(0, 0, 0, 0.7);
+$overlay-colour-dark: rgba(0, 0, 0, 0.8);
 $nav-bg-colour: #000;
 $content-colour: hsla(60, 100%, 99%, 0.9);
 $placeholder-colour: hsla(0, 0%, 70%, 0.3);
+$padding-s: 2% 0;
+$padding-m: 5% 0;
 
 //Mixins
 @mixin mobile-cards {
