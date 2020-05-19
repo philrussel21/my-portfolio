@@ -16,6 +16,15 @@ body {
         #434343,
         #000000
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    // background: rgb(0, 0, 0);
+    // background: linear-gradient(
+    //     90deg,
+    //     rgba(0, 0, 0, 1) 0%,
+    //     rgba(167, 167, 167, 1) 50%,
+    //     rgba(0, 0, 0, 1) 100%
+    // );
+
     color: $content-colour;
 }
 a {
