@@ -1,6 +1,47 @@
 @media screen and (min-width: 1025px) {
     // General
+    .desktop-hidden {
+        display: none;
+    }
 
+    header nav {
+        .nav-cont {
+            padding: 0;
+
+            p {
+                padding-left: 5%;
+                width: 100%;
+            }
+        }
+
+        #links {
+            display: block;
+            flex: 3;
+            width: auto;
+            height: auto;
+            background-color: inherit;
+
+            .desktop-hidden {
+                display: none;
+            }
+
+            .nav {
+                height: 100%;
+
+                ul {
+                    flex-direction: row;
+
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
     // About me page
     .journey-container {
         max-width: 1000px;

@@ -65,6 +65,7 @@ header nav .nav-cont {
 }
 
 header nav #links {
+  display: none;
   background-color: #000;
   width: 50%;
   height: 100vh;
@@ -790,6 +791,50 @@ footer {
 }
 
 @media screen and (min-width: 1025px) {
+  .desktop-hidden {
+    display: none;
+  }
+  header nav .nav-cont {
+    padding: 0;
+  }
+  header nav .nav-cont p {
+    padding-left: 5%;
+    width: 100%;
+  }
+  header nav #links {
+    display: block;
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    width: auto;
+    height: auto;
+    background-color: inherit;
+  }
+  header nav #links .desktop-hidden {
+    display: none;
+  }
+  header nav #links .nav {
+    height: 100%;
+  }
+  header nav #links .nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header nav #links .nav ul a {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .journey-container {
     max-width: 1000px;
     margin: 0 auto;
