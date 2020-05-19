@@ -42,3 +42,9 @@ $placeholder-colour: hsla(0, 0%, 70%, 0.3);
         background-color: $overlay-colour;
     }
 }
+
+@mixin tech-bg {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

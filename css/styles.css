@@ -133,7 +133,6 @@ h1 {
 
 h2 {
   padding: 5% 0;
-  letter-spacing: 0.5rem;
 }
 
 .showcase {
@@ -357,6 +356,11 @@ h2 {
   z-index: 2;
 }
 
+.journey h2,
+.blogs h2 {
+  letter-spacing: 0.5rem;
+}
+
 .tech-stack .techs {
   position: relative;
   min-height: 150px;
@@ -547,6 +551,21 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.other-projs .projects .card {
+  max-height: 40%;
+  width: 100%;
+}
+
+.other-projs .projects .card img {
+  max-height: 100%;
+  width: 100%;
+}
+
+.other-projs .projects .card-cont {
+  height: 60%;
+  width: 100%;
 }
 
 .contact {

@@ -21,5 +21,20 @@
         @include mobile-cards;
         min-height: 300px;
         max-width: 70%;
+
+        .card {
+            max-height: 40%;
+            width: 100%;
+
+            img {
+                max-height: 100%;
+                width: 100%;
+            }
+        }
+
+        .card-cont {
+            height: 60%;
+            width: 100%;
+        }
     }
 }
