@@ -1,0 +1,28 @@
+@media screen and (min-width: 1025px) {
+    // General
+
+    // About me page
+    .journey-container {
+        max-width: 1000px;
+        margin: 0 auto;
+
+        .img-container:after {
+            content: none;
+        }
+
+        .journey-content {
+            max-width: 100%;
+            padding: $padding-s;
+            padding-top: 0;
+            background-color: $overlay-colour-dark;
+
+            h2 {
+                padding: $padding-s;
+            }
+            p {
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
