@@ -7,11 +7,8 @@
     header nav {
         .nav-cont {
             padding: 0;
-
-            p {
-                padding-left: 5%;
-                width: 100%;
-            }
+            padding-left: 1%;
+            flex: 1;
         }
 
         #links {
