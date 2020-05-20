@@ -65,6 +65,13 @@
 
     &-content {
         @include mobile-cards;
+        a {
+            //
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            //
+        }
 
         h3,
         p {

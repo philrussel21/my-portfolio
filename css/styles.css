@@ -393,6 +393,12 @@ p {
           align-items: center;
 }
 
+.blogs-content a {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 .blogs-content h3,
 .blogs-content p {
   z-index: 2;
