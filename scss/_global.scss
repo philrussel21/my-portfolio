@@ -62,13 +62,13 @@ header {
             padding: 0 5%;
         }
 
-        #links {
-            // display: none;
+        .links-shown {
+            display: block;
             background-color: $nav-bg-colour;
             width: 50%;
             height: 100vh;
             z-index: 100;
-
+            transition: width 2s;
             .nav {
                 height: 40%;
 
@@ -96,6 +96,13 @@ header {
                     width: 100%;
                     text-align: center;
                 }
+            }
+        }
+        .hidden {
+            width: 0;
+            // display: none;
+            * {
+                animation: fade-out 1s ease-out forwards;
             }
         }
     }
@@ -131,10 +138,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.hidden {
-    display: none;
 }
 
 .desktop-only {
