@@ -93,7 +93,7 @@
         }
     }
 
-    // Tech Stack
+    // Tech Stack Page
     .tech-stack {
         margin: 5% 0;
         .techs {
@@ -124,6 +124,35 @@
 
                 &::before {
                     animation: shine 2s 0.5s;
+                }
+            }
+        }
+    }
+
+    // Projects Page
+    #projects {
+        .other-projs {
+            .projects {
+                transition: transform 1s;
+                &:first-of-type {
+                    &:hover {
+                        transform: translate(-60px, -60px);
+                    }
+                }
+                &:nth-of-type(2) {
+                    &:hover {
+                        transform: translate(-60px, 60px);
+                    }
+                }
+                &:nth-of-type(3) {
+                    &:hover {
+                        transform: translate(60px, -60px);
+                    }
+                }
+                &:last-of-type {
+                    &:hover {
+                        transform: translate(60px, 60px);
+                    }
                 }
             }
         }

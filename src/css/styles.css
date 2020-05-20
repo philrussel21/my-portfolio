@@ -876,7 +876,7 @@ p {
   }
   #projects .other-projs {
     max-width: 768px;
-    margin: 0 auto;
+    margin: 10% auto;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: minmax(200px, 350px) minmax(200px, 350px);
@@ -1079,6 +1079,28 @@ p {
   .tech-stack .techs:hover::before {
     -webkit-animation: shine 2s 0.5s;
             animation: shine 2s 0.5s;
+  }
+  #projects .other-projs .projects {
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+  }
+  #projects .other-projs .projects:first-of-type:hover {
+    -webkit-transform: translate(-60px, -60px);
+            transform: translate(-60px, -60px);
+  }
+  #projects .other-projs .projects:nth-of-type(2):hover {
+    -webkit-transform: translate(-60px, 60px);
+            transform: translate(-60px, 60px);
+  }
+  #projects .other-projs .projects:nth-of-type(3):hover {
+    -webkit-transform: translate(60px, -60px);
+            transform: translate(60px, -60px);
+  }
+  #projects .other-projs .projects:last-of-type:hover {
+    -webkit-transform: translate(60px, 60px);
+            transform: translate(60px, 60px);
   }
 }
 /*# sourceMappingURL=styles.css.map */
