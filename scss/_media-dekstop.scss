@@ -1,5 +1,18 @@
 @media screen and (min-width: 1025px) {
     // General
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .desktop-only {
+            padding: $padding-xs;
+            width: 50%;
+            align-self: center;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+
     .desktop-hidden {
         display: none;
     }
