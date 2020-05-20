@@ -84,11 +84,11 @@
     .blogs {
         .blogs-content {
             filter: grayscale(1) blur(3px);
+            transition: filter 1s, transform 1s;
 
             &:hover {
                 filter: unset;
-                animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-                    both;
+                transform: translateY(-50px);
             }
         }
     }
@@ -99,6 +99,7 @@
         .techs {
             position: relative;
             overflow: hidden;
+            transition: transform 0.5s;
 
             &::before {
                 position: absolute;
@@ -118,7 +119,8 @@
             }
 
             &:hover {
-                animation: zoom 0.5s forwards;
+                // animation: zoom 0.5s forwards;
+                transform: scale(1.3);
 
                 &::before {
                     animation: shine 2s 0.5s;
