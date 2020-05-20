@@ -143,3 +143,11 @@ body {
 .desktop-only {
     display: none;
 }
+
+h1,
+h2,
+h3,
+a,
+p {
+    animation: fade-in 3s forwards;
+}

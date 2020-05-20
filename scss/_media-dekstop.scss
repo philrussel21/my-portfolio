@@ -24,7 +24,7 @@
             flex: 1;
         }
 
-        #links {
+        .links-shown {
             display: block;
             flex: 3;
             width: auto;
@@ -51,6 +51,11 @@
                 }
             }
         }
+        .hidden {
+            * {
+                animation: fade-in 3s forwards;
+            }
+        }
     }
     // About me page
     .journey-container {
@@ -73,6 +78,17 @@
             p {
                 width: 50%;
                 margin: 0 auto;
+            }
+        }
+    }
+    .blogs {
+        .blogs-content {
+            filter: grayscale(1) blur(3px);
+
+            &:hover {
+                filter: unset;
+                animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+                    both;
             }
         }
     }

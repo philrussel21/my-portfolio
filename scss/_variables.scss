@@ -52,14 +52,3 @@ $padding-m: 5% 0;
     background-repeat: no-repeat;
     background-position: center;
 }
-
-// keyframes
-@keyframes fade-out {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-        display: none;
-    }
-}
