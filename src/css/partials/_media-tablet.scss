@@ -1,6 +1,11 @@
 @media screen and (min-width: 600px) {
     // General
-
+    header {
+        height: 8%;
+    }
+    main {
+        padding-top: 10%;
+    }
     .mobile-hidden {
         display: block;
     }

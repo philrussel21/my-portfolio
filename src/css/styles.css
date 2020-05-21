@@ -6,12 +6,9 @@
 }
 
 body {
-  background: #000000;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#434343), to(#000000));
-  background: linear-gradient(to right, #434343, #000000);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: black;
+  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(50%, #9d9d9d), to(black));
+  background: linear-gradient(90deg, black 0%, #9d9d9d 50%, black 100%);
   color: rgba(255, 255, 250, 0.9);
 }
 
@@ -734,6 +731,12 @@ p {
 }
 
 @media screen and (min-width: 600px) {
+  header {
+    height: 8%;
+  }
+  main {
+    padding-top: 10%;
+  }
   .mobile-hidden {
     display: block;
   }
