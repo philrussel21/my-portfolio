@@ -1,8 +1,9 @@
 .contact {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    transition: height 1s;
 
     .socials {
         display: flex;
@@ -10,7 +11,7 @@
     }
 
     form {
-        height: 55%;
+        height: 500px;
         width: 80%;
         margin: 0 auto;
         display: flex;
@@ -32,8 +33,9 @@
             width: 70%;
             border-radius: 5px;
         }
-        textarea {
-            width: 80%;
+        input[type="submit"] {
+            width: 20%;
+            min-width: 100px;
         }
     }
 }

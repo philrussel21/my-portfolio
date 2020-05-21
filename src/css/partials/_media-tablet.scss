@@ -193,4 +193,22 @@
             }
         }
     }
+
+    // Contact Page
+    .contact {
+        .resume {
+            margin: 1.3em 0;
+        }
+        form {
+            max-width: 600px;
+            height: 700px;
+
+            label {
+                padding: $padding-s;
+            }
+            input[type="submit"] {
+                margin: 1.3em 0;
+            }
+        }
+    }
 }

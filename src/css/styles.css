@@ -64,7 +64,7 @@ header nav .nav-cont {
 header nav .links-shown {
   display: block;
   background-color: #000;
-  width: 50%;
+  width: 35%;
   height: 100vh;
   z-index: 100;
   -webkit-transition: width 2s;
@@ -175,6 +175,10 @@ a,
 p {
   -webkit-animation: fade-in 3s forwards;
           animation: fade-in 3s forwards;
+}
+
+i:hover {
+  color: black;
 }
 
 .showcase {
@@ -620,7 +624,7 @@ p {
 }
 
 .contact {
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -631,6 +635,8 @@ p {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-transition: height 1s;
+  transition: height 1s;
 }
 
 .contact .socials {
@@ -643,7 +649,7 @@ p {
 }
 
 .contact form {
-  height: 55%;
+  height: 500px;
   width: 80%;
   margin: 0 auto;
   display: -webkit-box;
@@ -676,8 +682,9 @@ p {
   border-radius: 5px;
 }
 
-.contact form textarea {
-  width: 80%;
+.contact form input[type="submit"] {
+  width: 20%;
+  min-width: 100px;
 }
 
 @-webkit-keyframes fade-out {
@@ -943,6 +950,19 @@ p {
         -ms-flex: 0;
             flex: 0;
     background-color: rgba(0, 0, 0, 0.7);
+  }
+  .contact .resume {
+    margin: 1.3em 0;
+  }
+  .contact form {
+    max-width: 600px;
+    height: 700px;
+  }
+  .contact form label {
+    padding: 2% 0;
+  }
+  .contact form input[type="submit"] {
+    margin: 1.3em 0;
   }
 }
 
