@@ -49,3 +49,11 @@ $padding-m: 5% 0;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+@mixin center-with-flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

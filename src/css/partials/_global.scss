@@ -52,10 +52,10 @@ header {
         .links-shown {
             display: block;
             background-color: $nav-bg-colour;
-            width: 50%;
+            width: 35%;
             height: 100vh;
             z-index: 100;
-            transition: width 2s;
+            transition: width 1.5s;
             .nav {
                 height: 40%;
 
@@ -66,9 +66,10 @@ header {
 
                     li {
                         flex: 1;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        a {
+                            @include center-with-flex;
+                            border-bottom: 1px solid white;
+                        }
                     }
                 }
             }
@@ -80,14 +81,12 @@ header {
 
                 a {
                     flex: 1;
-                    width: 100%;
-                    text-align: center;
+                    @include center-with-flex;
                 }
             }
         }
         .hidden {
             width: 0;
-            // display: none;
             * {
                 animation: fade-out 1s ease-out forwards;
             }
@@ -132,4 +131,8 @@ h3,
 a,
 p {
     animation: fade-in 3s forwards;
+}
+
+i:hover {
+    color: black;
 }
