@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Ubuntu:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
 }
 
 body {
@@ -150,16 +152,32 @@ main {
   width: 95%;
   margin: 0 auto;
   margin-bottom: 5%;
-  padding-top: 5%;
+  padding-top: 8%;
   text-align: center;
 }
 
 h1 {
   padding: 5% 0;
+  font-size: 3rem;
 }
 
 h2 {
   padding: 5% 0;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p,
+a,
+input,
+textarea,
+button {
+  font-size: 1rem;
+  -webkit-transition: font-size 1s;
+  transition: font-size 1s;
 }
 
 .mobile-hidden {
@@ -192,8 +210,19 @@ p {
           animation: fade-in 3s forwards;
 }
 
+i {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
 i:hover {
-  color: black;
+  color: #000;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
 }
 
 .showcase {
@@ -269,6 +298,59 @@ i:hover {
       justify-content: space-around;
 }
 
+.showcase i {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.showcase i:hover {
+  color: unset;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.showcase a {
+  margin-top: 5%;
+}
+
+.showcase a button {
+  padding: 0.5em;
+  border-radius: 25px;
+}
+
+.showcase a button:hover {
+  background-color: #000;
+  color: rgba(255, 255, 250, 0.9);
+}
+
+.showcase .wrapper {
+  position: relative;
+}
+
+.showcase .wrapper h2 {
+  text-align: left;
+  padding: 0;
+}
+
+.showcase .wrapper h2 #space {
+  padding: 5px;
+}
+
+.showcase .wrapper h2 .inner {
+  position: absolute;
+  display: inline-block;
+  height: 2.6rem;
+  overflow: hidden;
+}
+
+.showcase .wrapper h2 .inner span {
+  -webkit-animation: rolling-text 10s ease infinite;
+          animation: rolling-text 10s ease infinite;
+  position: relative;
+}
+
 .journey-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,7 +395,22 @@ i:hover {
 }
 
 .journey-container .journey-content {
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
   z-index: 10;
+}
+
+.journey-container .journey-content p {
+  text-align: left;
+  padding-bottom: 2%;
+  max-width: 80%;
+  margin: 0 auto;
+  -webkit-transition: max-width 1s;
+  transition: max-width 1s;
+}
+
+.journey-container .journey-content h2 {
+  text-align: center;
 }
 
 .blogs-container {
@@ -562,6 +659,11 @@ i:hover {
   color: gold;
 }
 
+.terminal-proj p {
+  padding: 2% 0;
+  text-align: left;
+}
+
 .terminal-proj .vid-container {
   max-width: 100vw;
   max-height: 50%;
@@ -752,12 +854,91 @@ i:hover {
   }
 }
 
+@-webkit-keyframes rolling-text {
+  0% {
+    top: 0px;
+  }
+  15% {
+    top: 0px;
+  }
+  20% {
+    top: -36px;
+  }
+  35% {
+    top: -36px;
+  }
+  40% {
+    top: -74px;
+  }
+  55% {
+    top: -74px;
+  }
+  60% {
+    top: -110px;
+  }
+  75% {
+    top: -110px;
+  }
+  80% {
+    top: -148px;
+  }
+  95% {
+    top: -148px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes rolling-text {
+  0% {
+    top: 0px;
+  }
+  15% {
+    top: 0px;
+  }
+  20% {
+    top: -36px;
+  }
+  35% {
+    top: -36px;
+  }
+  40% {
+    top: -74px;
+  }
+  55% {
+    top: -74px;
+  }
+  60% {
+    top: -110px;
+  }
+  75% {
+    top: -110px;
+  }
+  80% {
+    top: -148px;
+  }
+  95% {
+    top: -148px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
 @media screen and (min-width: 600px) {
+  p,
+  a,
+  input,
+  textarea,
+  button {
+    font-size: 1.1rem;
+  }
   header {
     height: 8%;
   }
   main {
-    padding-top: 10%;
+    padding-top: 5%;
   }
   .mobile-hidden {
     display: block;
@@ -765,11 +946,12 @@ i:hover {
   .mobile-only {
     display: none;
   }
-  .journey-content {
+  .journey-container .journey-content {
+    max-width: 100%;
+  }
+  .journey-container .journey-content p {
     max-width: 50%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    margin: 0 auto;
   }
   .blogs {
     padding-bottom: 8%;
@@ -966,6 +1148,16 @@ i:hover {
             flex: 0;
     background-color: rgba(0, 0, 0, 0.7);
   }
+  #projects .other-projs .projects .card-cont h2,
+  #projects .other-projs .projects .card-cont p {
+    margin: 0 auto;
+  }
+  #projects .other-projs .projects .card-cont h2 {
+    width: 77%;
+  }
+  #projects .other-projs .projects .card-cont p {
+    width: 50%;
+  }
   .contact .resume {
     margin: 1.3em 0;
   }
@@ -981,7 +1173,14 @@ i:hover {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
+  p,
+  a,
+  input,
+  textarea,
+  button {
+    font-size: 1.2rem;
+  }
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1034,18 +1233,11 @@ i:hover {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  header nav .links-shown .nav ul a {
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  header nav .links-shown .nav ul li a {
+    border-bottom: 0px;
+  }
+  header nav .links-shown .nav ul li a:hover {
+    background-color: #000;
   }
   header nav .hidden * {
     -webkit-animation: fade-in 3s forwards;
@@ -1060,9 +1252,7 @@ i:hover {
   }
   .journey-container .journey-content {
     max-width: 100%;
-    padding: 2% 0;
-    padding-top: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
   .journey-container .journey-content h2 {
     padding: 2% 0;

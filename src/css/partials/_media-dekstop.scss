@@ -1,5 +1,13 @@
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
     // General
+    p,
+    a,
+    input,
+    textarea,
+    button {
+        font-size: 1.2rem;
+    }
+
     footer {
         display: flex;
         flex-direction: column-reverse;
@@ -40,9 +48,14 @@
 
                 ul {
                     flex-direction: row;
+                    li {
+                        a {
+                            border-bottom: 0px;
 
-                    a {
-                        @include center-with-flex;
+                            &:hover {
+                                background-color: $hovered-colour;
+                            }
+                        }
                     }
                 }
             }
@@ -64,9 +77,7 @@
 
         .journey-content {
             max-width: 100%;
-            padding: $padding-s;
-            padding-top: 0;
-            background-color: $overlay-colour-dark;
+            background-color: $overlay-colour;
 
             h2 {
                 padding: $padding-s;

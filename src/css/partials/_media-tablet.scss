@@ -1,10 +1,18 @@
 @media screen and (min-width: 600px) {
     // General
+    p,
+    a,
+    input,
+    textarea,
+    button {
+        font-size: 1.1rem;
+    }
+
     header {
         height: 8%;
     }
     main {
-        padding-top: 10%;
+        padding-top: 5%;
     }
     .mobile-hidden {
         display: block;
@@ -14,9 +22,15 @@
     }
 
     // About me page
-    .journey-content {
-        max-width: 50%;
-        align-self: center;
+    .journey-container {
+        .journey-content {
+            max-width: 100%;
+            // align-self: center;
+            p {
+                max-width: 50%;
+                margin: 0 auto;
+            }
+        }
     }
     .blogs {
         padding-bottom: 8%;
@@ -189,6 +203,17 @@
                 .card-cont {
                     flex: 0;
                     background-color: $overlay-colour;
+
+                    h2,
+                    p {
+                        margin: 0 auto;
+                    }
+                    h2 {
+                        width: 77%;
+                    }
+                    p {
+                        width: 50%;
+                    }
                 }
             }
         }

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $content-font;
 }
 body {
     background: rgb(0, 0, 0);
@@ -99,16 +100,31 @@ main {
     width: 95%;
     margin: 0 auto;
     margin-bottom: 5%;
-    padding-top: 5%;
+    padding-top: 8%;
     text-align: center;
 }
 
 h1 {
     padding: $padding-m;
+    font-size: 3rem;
 }
 
 h2 {
     padding: $padding-m;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p,
+a,
+input,
+textarea,
+button {
+    font-size: 1rem;
+    transition: font-size 1s;
 }
 
 .mobile-hidden {
@@ -133,6 +149,15 @@ p {
     animation: fade-in 3s forwards;
 }
 
-i:hover {
-    color: black;
+i {
+    transition: color 0.5s;
+    &:hover {
+        color: $hovered-colour;
+    }
+}
+
+h1,
+h2,
+h3 {
+    font-family: $heading-font;
 }

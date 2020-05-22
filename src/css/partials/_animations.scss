@@ -23,3 +23,39 @@
         left: 125%;
     }
 }
+
+@keyframes rolling-text {
+    0% {
+        top: 0px;
+    }
+    15% {
+        top: 0px;
+    }
+    20% {
+        top: -36px;
+    }
+    35% {
+        top: -36px;
+    }
+    40% {
+        top: -74px;
+    }
+    55% {
+        top: -74px;
+    }
+    60% {
+        top: -110px;
+    }
+    75% {
+        top: -110px;
+    }
+    80% {
+        top: -148px;
+    }
+    95% {
+        top: -148px;
+    }
+    100% {
+        top: 0px;
+    }
+}

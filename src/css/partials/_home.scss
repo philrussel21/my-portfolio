@@ -50,4 +50,45 @@
             justify-content: space-around;
         }
     }
+    i {
+        transition: transform 1s;
+        &:hover {
+            color: unset;
+            transform: translateY(-30px);
+        }
+    }
+    a {
+        margin-top: 5%;
+        button {
+            padding: 0.5em;
+            border-radius: 25px;
+
+            &:hover {
+                background-color: $hovered-colour;
+                color: hsla(60, 100%, 99%, 0.9);
+            }
+        }
+    }
+    .wrapper {
+        position: relative;
+        h2 {
+            text-align: left;
+            padding: 0;
+
+            #space {
+                padding: 5px;
+            }
+            .inner {
+                position: absolute;
+                display: inline-block;
+                height: 2.6rem;
+                overflow: hidden;
+
+                span {
+                    animation: rolling-text 10s ease infinite;
+                    position: relative;
+                }
+            }
+        }
+    }
 }

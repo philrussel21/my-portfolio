@@ -35,7 +35,20 @@
         }
 
         .journey-content {
+            // max-width: 100%;
+            transition: background-color 0.5s;
             z-index: 10;
+
+            p {
+                text-align: left;
+                padding-bottom: 2%;
+                max-width: 80%;
+                margin: 0 auto;
+                transition: max-width 1s;
+            }
+            h2 {
+                text-align: center;
+            }
         }
     }
 }
