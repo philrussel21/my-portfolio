@@ -76,6 +76,14 @@
             background-image: url("../assets/blog3\ amanda-jones-w5zpEiVtNIk-unsplash.jpg");
             @include bg-image;
         }
+        .blog4 {
+            background-image: url("https://via.placeholder.com/500x300.png");
+            @include bg-image;
+        }
+        .blog5 {
+            background-image: url("https://via.placeholder.com/500x300.png");
+            @include bg-image;
+        }
     }
 
     &-content {
