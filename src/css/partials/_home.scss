@@ -13,7 +13,7 @@
         width: 100%;
         height: 100%;
     }
-
+    // Overlays the video background for contrast.
     &:after {
         content: "";
         height: 100%;
@@ -50,6 +50,7 @@
             justify-content: space-around;
         }
     }
+    // Simple floating animation for icons when hovered.
     i {
         transition: transform 1s;
         &:hover {

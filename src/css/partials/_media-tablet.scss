@@ -12,7 +12,7 @@
         height: 8%;
     }
     main {
-        padding-top: 5%;
+        padding-top: 8%;
     }
     .mobile-hidden {
         display: block;
@@ -25,7 +25,6 @@
     .journey-container {
         .journey-content {
             max-width: 100%;
-            // align-self: center;
             p {
                 max-width: 50%;
                 margin: 0 auto;
@@ -35,6 +34,7 @@
     .blogs {
         padding-bottom: 8%;
     }
+    // Displays each blog and content in a grid.
     .blogs-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -102,6 +102,8 @@
     }
 
     // Tech Stack page
+
+    // Displays each tech-stack in a grid.
     .tech-stack {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
@@ -152,6 +154,8 @@
     }
 
     //Projects Page
+
+    // Displays each project in a grid. Rotate containers to take a diamond shape.
     #projects {
         .terminal-proj {
             margin-bottom: 10%;
@@ -160,7 +164,6 @@
             max-width: 768px;
             margin: 10% auto;
             display: grid;
-            // grid-template-columns: repeat(2, 1fr);
             grid-template-columns: minmax(200px, 350px) minmax(200px, 350px);
             grid-auto-rows: minmax(200px, 350px);
             grid-template-areas:
@@ -174,7 +177,6 @@
                 height: 100%;
                 max-height: 100%;
                 overflow: hidden;
-                //
                 margin: 0;
 
                 a {
@@ -194,7 +196,6 @@
                     grid-area: proj2;
                     a {
                         background-image: url("../assets/terminal\ markus-spiske-iar-afB0QQw-unsplash.jpg");
-                        background-size: cover;
                     }
                 }
 

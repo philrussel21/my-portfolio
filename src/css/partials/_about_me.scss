@@ -22,7 +22,7 @@
                 height: 100%;
                 width: 100%;
             }
-
+            // Background image overlay for better contrast.
             &:after {
                 content: "";
                 z-index: 1;
@@ -36,7 +36,6 @@
         }
 
         .journey-content {
-            // max-width: 100%;
             transition: background-color 0.5s;
             z-index: 10;
 
@@ -89,11 +88,9 @@
     &-content {
         @include mobile-cards;
         a {
-            //
             position: absolute;
             top: 0px;
             left: 0px;
-            //
         }
 
         h3,

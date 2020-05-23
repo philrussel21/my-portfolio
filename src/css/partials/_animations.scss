@@ -1,4 +1,6 @@
 // keyframes
+
+// Fade out animation for mobile and tablet navbar when clicked and unclicked.
 @keyframes fade-out {
     from {
         opacity: 1;
@@ -8,7 +10,7 @@
         display: none;
     }
 }
-
+// Fade in animation for all texts when loaded.
 @keyframes fade-in {
     from {
         opacity: 0;
@@ -18,12 +20,14 @@
     }
 }
 
+// Shine feature animation for each tech stack when hovered.
 @keyframes shine {
     100% {
         left: 125%;
     }
 }
 
+// Rolling text animation for index.html subheading
 @keyframes rolling-text {
     0% {
         top: 0px;
