@@ -6,6 +6,7 @@
     .vid-container {
         max-width: 100vw;
         max-height: 50%;
+        box-shadow: $box-shadow;
 
         video {
             width: 100%;
@@ -39,6 +40,10 @@
         .card-cont {
             flex: 1;
             width: 100%;
+
+            h2 {
+                text-shadow: unset;
+            }
         }
     }
 }

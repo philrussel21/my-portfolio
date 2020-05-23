@@ -20,6 +20,7 @@
         align-items: center;
         background-color: $placeholder-colour;
         border-radius: 5px;
+        box-shadow: 10px 5px 0px rgba(0, 0, 0, 0.75);
 
         label,
         input,
@@ -36,6 +37,12 @@
         input[type="submit"] {
             width: 20%;
             min-width: 100px;
+            box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+
+            &:hover {
+                background-color: black;
+                color: #fff;
+            }
         }
     }
 }

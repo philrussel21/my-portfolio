@@ -10,6 +10,7 @@ $padding-m: 5% 0;
 $hovered-colour: #000;
 $heading-font: "Raleway", sans-serif;
 $content-font: "Ubuntu", sans-serif;
+$box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
 //Mixins
 @mixin mobile-cards {
@@ -19,6 +20,7 @@ $content-font: "Ubuntu", sans-serif;
     width: 100%;
     background-color: $placeholder-colour;
     margin: 5% 0;
+    box-shadow: $box-shadow;
 
     a {
         display: inline-block;

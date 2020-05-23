@@ -159,11 +159,13 @@ main {
 h1 {
   padding: 5% 0;
   font-size: 3rem;
+  text-shadow: 4px 3px 0 #7a7a7a;
 }
 
 h2 {
   padding: 5% 0;
   font-size: 2rem;
+  text-shadow: 3px 2px 0 #7a7a7a;
 }
 
 h3 {
@@ -311,6 +313,10 @@ h3 {
           transform: translateY(-30px);
 }
 
+.showcase h1 {
+  text-shadow: 0px 0px 5px white;
+}
+
 .showcase a {
   margin-top: 5%;
 }
@@ -318,11 +324,26 @@ h3 {
 .showcase a button {
   padding: 0.5em;
   border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 10px 0px white;
+          box-shadow: 0px 0px 10px 0px white;
+}
+
+.showcase a button i {
+  padding: 0 4px;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .showcase a button:hover {
   background-color: #000;
   color: rgba(255, 255, 250, 0.9);
+}
+
+.showcase a button:hover i {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 .showcase .wrapper {
@@ -332,6 +353,7 @@ h3 {
 .showcase .wrapper h2 {
   text-align: left;
   padding: 0;
+  text-shadow: unset;
 }
 
 .showcase .wrapper h2 #space {
@@ -365,6 +387,8 @@ h3 {
   position: relative;
   height: 50vh;
   max-width: 100vw;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .journey-container .img-container {
@@ -411,6 +435,7 @@ h3 {
 
 .journey-container .journey-content h2 {
   text-align: center;
+  text-shadow: 0px 0px 3px white;
 }
 
 .blogs-container {
@@ -484,6 +509,8 @@ h3 {
   width: 100%;
   background-color: rgba(179, 179, 179, 0.3);
   margin: 5% 0;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .blogs-content a {
@@ -533,6 +560,8 @@ h3 {
   width: 100%;
   background-color: rgba(179, 179, 179, 0.3);
   margin: 5% 0;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -667,6 +696,8 @@ h3 {
 .terminal-proj .vid-container {
   max-width: 100vw;
   max-height: 50%;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .terminal-proj .vid-container video {
@@ -697,6 +728,8 @@ h3 {
   width: 100%;
   background-color: rgba(179, 179, 179, 0.3);
   margin: 5% 0;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   min-height: 300px;
   max-width: 70%;
 }
@@ -738,6 +771,10 @@ h3 {
       -ms-flex: 1;
           flex: 1;
   width: 100%;
+}
+
+.other-projs .projects .card-cont h2 {
+  text-shadow: unset;
 }
 
 .contact {
@@ -784,6 +821,8 @@ h3 {
           align-items: center;
   background-color: rgba(179, 179, 179, 0.3);
   border-radius: 5px;
+  -webkit-box-shadow: 10px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .contact form label,
@@ -802,6 +841,13 @@ h3 {
 .contact form input[type="submit"] {
   width: 20%;
   min-width: 100px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contact form input[type="submit"]:hover {
+  background-color: black;
+  color: #fff;
 }
 
 @-webkit-keyframes fade-out {
@@ -1235,9 +1281,32 @@ h3 {
   }
   header nav .links-shown .nav ul li a {
     border-bottom: 0px;
+    position: relative;
+  }
+  header nav .links-shown .nav ul li a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #fff;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
   }
   header nav .links-shown .nav ul li a:hover {
     background-color: #000;
+  }
+  header nav .links-shown .nav ul li a:hover:before, header nav .links-shown .nav ul li a:focus:before, header nav .links-shown .nav ul li a:active:before {
+    left: 0;
+    right: 0;
   }
   header nav .hidden * {
     -webkit-animation: fade-in 3s forwards;
