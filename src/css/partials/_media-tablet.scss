@@ -108,7 +108,7 @@
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         grid-auto-rows: minmax(300px, auto);
-        row-gap: 10%;
+        row-gap: 50px;
 
         .techs {
             max-height: 100%;
@@ -196,6 +196,7 @@
                     grid-area: proj2;
                     a {
                         background-image: url("../assets/terminal\ markus-spiske-iar-afB0QQw-unsplash.jpg");
+                        background-size: cover;
                     }
                 }
 

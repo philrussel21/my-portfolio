@@ -300,6 +300,35 @@ h3 {
       justify-content: space-around;
 }
 
+.showcase .home .home-head a {
+  margin-top: 25%;
+}
+
+.showcase .home .home-head a button {
+  padding: 0.5em;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 10px 0px white;
+          box-shadow: 0px 0px 10px 0px white;
+}
+
+.showcase .home .home-head a button i {
+  padding: 0 4px;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.showcase .home .home-head a button:hover {
+  background-color: #000;
+  color: rgba(255, 255, 250, 0.9);
+}
+
+.showcase .home .home-head a button:hover i {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
 .showcase i {
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
@@ -315,35 +344,6 @@ h3 {
 
 .showcase h1 {
   text-shadow: 0px 0px 5px white;
-}
-
-.showcase a {
-  margin-top: 5%;
-}
-
-.showcase a button {
-  padding: 0.5em;
-  border-radius: 25px;
-  -webkit-box-shadow: 0px 0px 10px 0px white;
-          box-shadow: 0px 0px 10px 0px white;
-}
-
-.showcase a button i {
-  padding: 0 4px;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-}
-
-.showcase a button:hover {
-  background-color: #000;
-  color: rgba(255, 255, 250, 0.9);
-}
-
-.showcase a button:hover i {
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
 }
 
 .showcase .wrapper {
@@ -1129,7 +1129,7 @@ h3 {
     -ms-grid-columns: (1fr)[7];
         grid-template-columns: repeat(7, 1fr);
     grid-auto-rows: minmax(300px, auto);
-    row-gap: 10%;
+    row-gap: 50px;
   }
   .tech-stack .techs {
     max-height: 100%;
@@ -1219,6 +1219,7 @@ h3 {
   }
   #projects .other-projs .projects:nth-of-type(2) a {
     background-image: url("../assets/terminal markus-spiske-iar-afB0QQw-unsplash.jpg");
+    background-size: cover;
   }
   #projects .other-projs .projects:nth-of-type(3) {
     -ms-grid-row: 1;
