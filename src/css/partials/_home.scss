@@ -87,12 +87,16 @@
         text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
     }
 
+    // Rolling text
     .wrapper {
         position: relative;
         h2 {
             text-align: left;
             padding: 0;
             text-shadow: unset;
+            //
+            font-size: 1rem;
+            padding-left: 3em;
 
             #space {
                 padding: 5px;
@@ -100,11 +104,13 @@
             .inner {
                 position: absolute;
                 display: inline-block;
-                height: 2.6rem;
+                // height: 2.6rem;
+                height: 1.2rem;
                 overflow: hidden;
 
                 span {
-                    animation: rolling-text 10s ease infinite;
+                    // animation: rolling-text 10s ease infinite;
+                    animation: rolling-text-mobile 10s ease infinite;
                     position: relative;
                 }
             }
