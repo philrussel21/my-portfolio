@@ -21,6 +21,17 @@
         display: none;
     }
 
+    // Home page
+    .wrapper {
+        h2 {
+            .inner {
+                span {
+                    animation: rolling-text 10s ease infinite;
+                }
+            }
+        }
+    }
+
     // About me page
     .journey-container {
         .journey-content {

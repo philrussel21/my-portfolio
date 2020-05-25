@@ -368,8 +368,6 @@ h3 {
 }
 
 .showcase .wrapper h2 .inner span {
-  -webkit-animation: rolling-text 10s ease infinite;
-          animation: rolling-text 10s ease infinite;
   position: relative;
 }
 
@@ -1023,6 +1021,10 @@ h3 {
   }
   .mobile-only {
     display: none;
+  }
+  .wrapper h2 .inner span {
+    -webkit-animation: rolling-text 10s ease infinite;
+            animation: rolling-text 10s ease infinite;
   }
   .journey-container .journey-content {
     max-width: 100%;
