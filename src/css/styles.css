@@ -354,8 +354,6 @@ h3 {
   text-align: left;
   padding: 0;
   text-shadow: unset;
-  font-size: 1rem;
-  padding-left: 3em;
 }
 
 .showcase .wrapper h2 #space {
@@ -365,13 +363,13 @@ h3 {
 .showcase .wrapper h2 .inner {
   position: absolute;
   display: inline-block;
-  height: 1.2rem;
+  height: 2.6rem;
   overflow: hidden;
 }
 
 .showcase .wrapper h2 .inner span {
-  -webkit-animation: rolling-text-mobile 10s ease infinite;
-          animation: rolling-text-mobile 10s ease infinite;
+  -webkit-animation: rolling-text 10s ease infinite;
+          animation: rolling-text 10s ease infinite;
   position: relative;
 }
 
@@ -1006,78 +1004,6 @@ h3 {
   }
 }
 
-@-webkit-keyframes rolling-text-mobile {
-  0% {
-    top: 0px;
-  }
-  15% {
-    top: 0px;
-  }
-  20% {
-    top: -18px;
-  }
-  35% {
-    top: -18px;
-  }
-  40% {
-    top: -36px;
-  }
-  55% {
-    top: -36px;
-  }
-  60% {
-    top: -53px;
-  }
-  75% {
-    top: -53px;
-  }
-  80% {
-    top: -71px;
-  }
-  95% {
-    top: -71px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-
-@keyframes rolling-text-mobile {
-  0% {
-    top: 0px;
-  }
-  15% {
-    top: 0px;
-  }
-  20% {
-    top: -18px;
-  }
-  35% {
-    top: -18px;
-  }
-  40% {
-    top: -36px;
-  }
-  55% {
-    top: -36px;
-  }
-  60% {
-    top: -53px;
-  }
-  75% {
-    top: -53px;
-  }
-  80% {
-    top: -71px;
-  }
-  95% {
-    top: -71px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-
 @media screen and (min-width: 600px) {
   p,
   a,
@@ -1097,17 +1023,6 @@ h3 {
   }
   .mobile-only {
     display: none;
-  }
-  .showcase .wrapper h2 {
-    font-size: 2rem;
-    padding-left: unset;
-  }
-  .showcase .wrapper h2 .inner {
-    height: 2.6rem;
-  }
-  .showcase .wrapper h2 .inner span {
-    -webkit-animation: rolling-text 10s ease infinite;
-            animation: rolling-text 10s ease infinite;
   }
   .journey-container .journey-content {
     max-width: 100%;
