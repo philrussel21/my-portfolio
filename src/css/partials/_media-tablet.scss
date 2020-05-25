@@ -22,11 +22,17 @@
     }
 
     // Home page
-    .wrapper {
-        h2 {
-            .inner {
-                span {
-                    animation: rolling-text 10s ease infinite;
+    .showcase {
+        .wrapper {
+            h2 {
+                font-size: 2rem;
+                width: unset;
+                padding-left: unset;
+                .inner {
+                    height: 2.6rem;
+                    span {
+                        animation: rolling-text 10s ease infinite;
+                    }
                 }
             }
         }

@@ -354,6 +354,11 @@ h3 {
   text-align: left;
   padding: 0;
   text-shadow: unset;
+  font-size: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 3em;
 }
 
 .showcase .wrapper h2 #space {
@@ -363,7 +368,7 @@ h3 {
 .showcase .wrapper h2 .inner {
   position: absolute;
   display: inline-block;
-  height: 2.6rem;
+  height: 1.3rem;
   overflow: hidden;
 }
 
@@ -1022,7 +1027,15 @@ h3 {
   .mobile-only {
     display: none;
   }
-  .wrapper h2 .inner span {
+  .showcase .wrapper h2 {
+    font-size: 2rem;
+    width: unset;
+    padding-left: unset;
+  }
+  .showcase .wrapper h2 .inner {
+    height: 2.6rem;
+  }
+  .showcase .wrapper h2 .inner span {
     -webkit-animation: rolling-text 10s ease infinite;
             animation: rolling-text 10s ease infinite;
   }
