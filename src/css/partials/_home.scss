@@ -1,116 +1,131 @@
+.modal {
+	position: absolute;
+	z-index: 999;
+	top: 10%;
+	text-align: center;
+
+	.msg {
+		width: 80%;
+		margin: auto;
+	}
+	a {
+		text-decoration: underline;
+	}
+}
+
 .showcase {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: $content-colour;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: $content-colour;
 
-    .video-cont {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-    }
-    // Overlays the video background for contrast.
-    &:after {
-        content: "";
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        z-index: 1;
-        background: $overlay-colour;
-    }
+	.video-cont {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+	}
+	// Overlays the video background for contrast.
+	&:after {
+		content: '';
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 1;
+		background: $overlay-colour;
+	}
 
-    video {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+	video {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 
-    .home {
-        z-index: 10;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+	.home {
+		z-index: 10;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 
-        &-social {
-            margin-top: 20%;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-        }
+		&-social {
+			margin-top: 20%;
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+		}
 
-        .home-head {
-            a {
-                margin-top: 25%;
-                button {
-                    padding: 0.5em;
-                    border-radius: 25px;
-                    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 1);
+		.home-head {
+			a {
+				margin-top: 25%;
+				button {
+					padding: 0.5em;
+					border-radius: 25px;
+					box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 1);
 
-                    i {
-                        padding: 0 4px;
-                        transition: transform 1s;
-                    }
+					i {
+						padding: 0 4px;
+						transition: transform 1s;
+					}
 
-                    &:hover {
-                        background-color: $hovered-colour;
-                        color: hsla(60, 100%, 99%, 0.9);
+					&:hover {
+						background-color: $hovered-colour;
+						color: hsla(60, 100%, 99%, 0.9);
 
-                        i {
-                            transform: translateX(10px);
-                        }
-                    }
-                }
-            }
-        }
-    }
-    // Simple floating animation for icons when hovered.
-    i {
-        transition: transform 1s;
-        &:hover {
-            color: unset;
-            transform: translateY(-30px);
-        }
-    }
-    h1 {
-        text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
-    }
+						i {
+							transform: translateX(10px);
+						}
+					}
+				}
+			}
+		}
+	}
+	// Simple floating animation for icons when hovered.
+	i {
+		transition: transform 1s;
+		&:hover {
+			color: unset;
+			transform: translateY(-30px);
+		}
+	}
+	h1 {
+		text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+	}
 
-    .wrapper {
-        position: relative;
-        h2 {
-            text-align: left;
-            padding: 0;
-            text-shadow: unset;
-            font-size: 1rem;
-            width: fit-content;
-            padding-left: 3em;
+	.wrapper {
+		position: relative;
+		h2 {
+			text-align: left;
+			padding: 0;
+			text-shadow: unset;
+			font-size: 1rem;
+			width: fit-content;
+			padding-left: 3em;
 
-            #space {
-                padding: 5px;
-            }
-            .inner {
-                position: absolute;
-                display: inline-block;
-                // height: 2.6rem;
-                height: 1.3rem;
-                overflow: hidden;
+			#space {
+				padding: 5px;
+			}
+			.inner {
+				position: absolute;
+				display: inline-block;
+				// height: 2.6rem;
+				height: 1.3rem;
+				overflow: hidden;
 
-                span {
-                    position: relative;
-                }
-            }
-        }
-    }
+				span {
+					position: relative;
+				}
+			}
+		}
+	}
 }

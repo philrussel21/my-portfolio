@@ -227,6 +227,22 @@ h3 {
   font-family: "Raleway", sans-serif;
 }
 
+.modal {
+  position: absolute;
+  z-index: 999;
+  top: 10%;
+  text-align: center;
+}
+
+.modal .msg {
+  width: 80%;
+  margin: auto;
+}
+
+.modal a {
+  text-decoration: underline;
+}
+
 .showcase {
   height: 100vh;
   display: -webkit-box;
@@ -251,7 +267,7 @@ h3 {
 }
 
 .showcase:after {
-  content: "";
+  content: '';
   height: 100%;
   width: 100%;
   position: absolute;
